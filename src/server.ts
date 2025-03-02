@@ -1,19 +1,10 @@
-import fastify from 'fastify'
-import { env } from './env'
-import cookie from "@fastify/cookie"
-import { transactionsRoutes } from './routes/transactionsRoutes'
-
-const app = fastify()
-app.register(cookie)
-
-app.register(transactionsRoutes,{
-  prefix: 'transactions'
-})
+import { env } from "./env";
+import { app } from "./app";
 
 app
   .listen({
     port: env.PORT,
   })
   .then(() => {
-    console.log('HTTP Server Running')
-  })
+    console.log("HTTP Server Running");
+  });

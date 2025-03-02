@@ -4,3 +4,4 @@ tmp/app.db
 tmp/db
 db
 .env
+.env.test
