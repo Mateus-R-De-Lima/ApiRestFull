@@ -7,7 +7,8 @@
     "test": "vitest",
     "dev": "tsx watch src/server.ts",
     "knex": "node --import tsx ./node_modules/knex/bin/cli.js",
-    "lint": "eslint src --ext .ts --fix"
+    "lint": "eslint src --ext .ts --fix",
+    "build": "tsup src --out-dir build"
   },
   "author": "Mateus Lima",
   "license": "ISC",
@@ -16,6 +17,7 @@
     "@types/supertest": "^6.0.2",
     "eslint": "^8.57.1",
     "supertest": "^7.0.0",
+    "tsup": "^8.4.0",
     "typescript": "^5.7.3",
     "vitest": "^3.0.7"
   },
