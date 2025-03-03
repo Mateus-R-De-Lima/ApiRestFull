@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Api com Fastify",
   "main": "server.ts",
+  "engines": {
+    "node": ">= 18"
+  },
   "scripts": {
     "test": "vitest",
     "dev": "tsx watch src/server.ts",
@@ -27,6 +30,7 @@
     "dotenv": "^16.4.7",
     "fastify": "^5.2.1",
     "knex": "^3.1.0",
+    "pg": "^8.13.1",
     "sqlite3": "^5.1.7",
     "tsx": "^4.19.2",
     "zod": "^3.24.2"
