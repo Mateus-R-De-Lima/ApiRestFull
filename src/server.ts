@@ -3,8 +3,7 @@ import { app } from "./app";
 
 app
   .listen({
-    port: env.PORT || 10000,
-
+    port: env.PORT,
     
   })
   .then(() => {
